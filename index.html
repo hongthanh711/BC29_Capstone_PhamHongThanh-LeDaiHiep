@@ -11,8 +11,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- google fonts -->
+  <!-- Google fonts -->
   <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./css/responsive.css">
 
@@ -66,6 +71,93 @@
     </div>
   </section>
 
+  <section class="plan">
+    <div class="container">
+      <div class="plan__title text-center">
+        <p class="sub-title">
+          Our Plans
+        </p>
+        <h2 class="title">
+          Affordable Packages
+        </h2>
+      </div>
+
+
+      <div class="plan__list d-flex justify-content-center align-items-center">
+        <div class=" plan__item text-center">
+          <h3 class="item__title">
+            Free Package
+          </h3>
+          <div class="price">
+            <span class="number">
+              $0
+            </span>
+            <span class="text">
+              /month
+            </span>
+          </div>
+          <ul class="detail">
+            <li>5 Dog Walk</li>
+            <li>3 Vet Visit</li>
+            <li>3 Pet Spa</li>
+            <li>Free Supports</li>
+            <li>Customer Support</li>
+          </ul>
+          <a href=""><button class="btn-green">By Now</button></a>
+        </div>
+
+        <div class="plan__item text-center">
+          <div class="item_save">
+            <p class="save-text">
+              Save 10%
+            </p>
+            <h3 class="item__title text-white">
+              Standard Package
+            </h3>
+            <div class="price">
+              <span class="number text-white">
+                $39
+              </span>
+              <span class="text text-white">
+                /month
+              </span>
+            </div>
+          </div>
+          <ul class="detail">
+            <li>5 Dog Walk</li>
+            <li>3 Vet Visit</li>
+            <li>3 Pet Spa</li>
+            <li>Free Supports</li>
+            <li>Customer Support</li>
+          </ul>
+          <a href=""><button class="btn-green">Get Started</button></a>
+        </div>
+
+        <div class="plan__item  text-center">
+          <h3 class="item__title">
+            Pro Package
+          </h3>
+          <div class="price">
+            <span class="number">
+              $89
+            </span>
+            <span class="text">
+              /month
+            </span>
+          </div>
+          <ul class="detail">
+            <li>5 Dog Walk</li>
+            <li>3 Vet Visit</li>
+            <li>3 Pet Spa</li>
+            <li>Free Supports</li>
+            <li>Customer Support</li>
+          </ul>
+          <a href=""><button class="btn-green">By Now</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="testimonials">
     <div class="container container-tb">
       <div class="testimonials__title text-center">
@@ -99,14 +191,14 @@
   </section>
 
   <footer>
-    <div class="container">
-      <div class="footer__info">
-        <div class="row">
-          <div class="footer__contact col-6">
-            <h4 class="footer__title">
-              Contact information
-            </h4>
-            <div class="contact-content">
+    <div class="footer__info">
+      <div class="row">
+        <div class="footer__contact col-6">
+          <h4 class="footer__title">
+            Contact information
+          </h4>
+          <div class="contact-content">
+            <div class="text">
               <p>
                 <span>Address</span>
                 <span> : #135 block, Barnard St. Brooklyn, London 10036, UK</span>
@@ -120,49 +212,57 @@
                 <span> : <a href="mailtoexample@mail.com:">example@mail.com</a></span>
               </p>
             </div>
-          </div>
 
-          <div class="footer__company col-2">
-            <h4 class="footer__title">
-              Company
-            </h4>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog Posts</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </div>
-
-          <div class="footer__link col-2">
-            <h4 class="footer__title">
-              Quick Links
-            </h4>
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Create account</a></li>
-              <li><a href="#">Care Center</a></li>
-              <li><a href="#">Site Feedack</a></li>
-            </ul>
-          </div>
-
-          <div class="footer__support col-2">
-            <h4 class="footer__titlee">
-              Support
-            </h4>
-            <ul>
-              <li><a href="#">All Dogs</a></li>
-              <li><a href="#">Care Advices</a></li>
-              <li><a href="#">Care Support</a></li>
-              <li><a href="#">Veterinary Help</a></li>
-            </ul>
+            <div class="icon">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-google"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="footer__copy-right">
-        <p>© 2020 Pooch Care. All Rights Reserved. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
+        <div class="footer__company col-2">
+          <h4 class="footer__title">
+            Company
+          </h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__link col-2">
+          <h4 class="footer__title">
+            Quick Links
+          </h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Create account</a></li>
+            <li><a href="#">Care Center</a></li>
+            <li><a href="#">Site Feedack</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__support col-2">
+          <h4 class="footer__title">
+            Support
+          </h4>
+          <ul>
+            <li><a href="#">All Dogs</a></li>
+            <li><a href="#">Care Advices</a></li>
+            <li><a href="#">Care Support</a></li>
+            <li><a href="#">Veterinary Help</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+
+    <div class="footer__copy-right text-center">
+      <p>© 2020 Pooch Care. All Rights Reserved. Design by <a href="https://w3layouts.com/" class="link">W3Layouts</a>
+      </p>
     </div>
   </footer>
 
