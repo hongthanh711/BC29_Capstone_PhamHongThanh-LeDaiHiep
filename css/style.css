@@ -69,7 +69,7 @@ a {
 .hide {
     visibility: hidden;
     opacity: 0;
-  }
+}
 
 /* Statistics */
 .statistics {
@@ -99,6 +99,10 @@ a {
     background: var(--bg-color);
 }
 
+.plan__list {
+    margin-top: 35px;
+}
+
 .plan .container {
     margin: 0 auto;
 }
@@ -112,12 +116,19 @@ a {
 .plan__item {
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .plan__item .item__title {
     font-size: 25px;
     font-weight: 600;
+    margin: 15px 0;
 }
+
+.plan__item button {
+     margin-top: 20px;
+}
+
 
 .plan__item:nth-child(1),
 .plan__item:nth-child(3) {
@@ -171,7 +182,6 @@ a {
 .plan__item .item_save {
     background-color: var(--primary-color);
     padding: 45px 0 35px;
-    border-radius: 10px 10px 0 0 ;
 }
 
 .plan__item .item_save .save-text {
@@ -190,7 +200,7 @@ a {
 }
 
 
-.nutrition__content i {
+.nutrition__content .icon > i {
     color: var(--primary-color);
     padding: 20px;
     background-color: white;
@@ -198,10 +208,9 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
 }
 
-.nutrition__content i::before,
+/* .nutrition__content i::before,
 .nutrition__content i::after {
     content: "";
     position: absolute;
@@ -213,7 +222,7 @@ a {
     opacity: 0.6;
     border-radius: 50%;
     z-index: -2;
-}
+} */
 
 .nutrition__content i::before {
     animation: pulsing 2s infinite;
@@ -368,3 +377,20 @@ footer {
     opacity: 0.9;
 }
 
+
+
+/*  */
+#video {
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 1, 0.4);
+    z-index: 2;
+  }
