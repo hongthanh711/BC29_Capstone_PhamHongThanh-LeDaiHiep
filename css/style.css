@@ -9,6 +9,7 @@
 :root {
     --primary-color: #189A46;
     --secondary-color: #f53626;
+    --bg-color: rgba(147, 107, 232, 0.05);
 }
 
 p, span {
@@ -65,6 +66,11 @@ a {
     background-color: #116E32;
 }
 
+.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
 /* Statistics */
 .statistics {
     background-color: var(--primary-color);
@@ -90,7 +96,7 @@ a {
 
 /* Plan */
 .plan {
-    background: rgba(147, 107, 232, 0.05);
+    background: var(--bg-color);
 }
 
 .plan .container {
@@ -178,11 +184,107 @@ a {
     font-weight: 700;
 }
 
+/* Nutrition */
+.nutrition__content {
+    position: relative;
+}
+
+
+.nutrition__content i {
+    color: var(--primary-color);
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.nutrition__content i::before,
+.nutrition__content i::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    opacity: 0.6;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.nutrition__content i::before {
+    animation: pulsing 2s infinite;
+
+}
+
+
+.nutrition__content i::after {
+    animation: pulsing 2s infinite 0.5s;
+
+}
+
+@keyframes pulsing {
+    0% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(2);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
+
+
 
 /* Testimonials */
+.testimonials {
+    background: var(--bg-color);
+}
+
+.testimonials__item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    padding: 35px;
+}
+
+
+.testimonials__item .content q {
+    font-size: 20px;
+    color: #696969;
+}
+
+.testimonials__item .content q::before {
+    font-size: 50px;
+    color: var(--primary-color);
+    /* line-height: .8; */
+    padding-top: 8px;
+    font-weight: 600;
+    font-family: "Merriweather", serif;
+}
+
 .testimonials__item .avatar img {
     height: 80px;
 }
+
+.testimonials__item .user .info {
+    margin-left: 20px;
+}
+
+.testimonials__item .user .info h4,
+.testimonials__item .user .info p {
+    margin: 0;
+}
+
 
 /* Sub */
 .sub {
@@ -265,3 +367,4 @@ footer {
     color: var(--secondary-color);
     opacity: 0.9;
 }
+
