@@ -1,29 +1,448 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pooch Care</title>
+    <title>Pooch Care an Animal Category</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   
-    <!-- google fonts -->  
-    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link
+      rel="stylesheet"
+      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
-
-
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
   <body>
-      
+    <!-- HEADER -->
+    <header class="fixed-top nav-fixed">
+      <div class="container">
+        <nav class="navbar navbar-expand-sm">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">Pooch Care</a>
+
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                Blog
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Blog Posts</a>
+                <a class="dropdown-item" href="#">Blog single</a>
+                <a class="dropdown-item" href="#">Landing Page</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    onclick="changeTheme()"
+                  />
+                  <div class="mode-container">
+                    <i class="fa-regular fa-sun"></i>
+                    <i class="fa-regular fa-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+        </nav>
+      </div>
+    </header>
+
+    <!-- CAROUSEL -->
+
+    <section id="carousel main-slider">
+      <div class="carousel-content">
+        <div class="owl-one owl-carousel owl-theme owl-loaded owl-drag">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item active">
+                <div class="item">
+                  <div class="slider-info banner-1">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg banner-view text-left">
+                          <h5>Quality Things for Loving Pets</h5>
+                          <p>Keeps your Pet Smiling</p>
+                          <a href="#" class="btn btn-white mt-sm-5 mt-4 mr-2"
+                            >Read More</a
+                          >
+                          <a
+                            href="#"
+                            class="btn btn-style border-btn mt-sm-5 mt-4"
+                            >Contact Us</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="owl-item">
+                <div class="item">
+                  <div class="slider-info banner-2">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg banner-view ml-lg-auto">
+                          <h5>Delivering happiness for Pets</h5>
+                          <p>We help your Projects</p>
+                          <a href="#" class="btn btn-white">Read More</a>
+                          <a href="#" class="btn btn-style border-btn"
+                            >Contact Us</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="owl-item">
+                <div class="item">
+                  <div class="slider-info banner-3">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg banner-view text-left">
+                          <h5>Quality Things for Loving Pets</h5>
+                          <p>Keeps your Pet Smiling</p>
+                          <a href="#" class="btn btn-white">Read More</a>
+                          <a href="#" class="btn btn-style border-btn"
+                            >Contact Us</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="owl-item">
+                <div class="item">
+                  <div class="slider-info banner-4">
+                    <div class="banner-info">
+                      <div class="container">
+                        <div class="banner-info-bg banner-view ml-lg-auto">
+                          <h5>Delivering happiness for Pets</h5>
+                          <p>We help your Projects</p>
+                          <a href="#" class="btn btn-white btn-style"
+                            >Read More</a
+                          >
+                          <a href="#" class="btn btn-style border-btn"
+                            >Contact Us</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="w3l-grids-3 py-5">
+      <div class="container py-md-5 py-3">
+        <div class="bottom-ab-grids align-items-center">
+          <div class="bottom-ab-left">
+            <h6 class="sub-title">About Us</h6>
+            <h3 class="hny-title">We love your pets like they are our own</h3>
+            <p class="my-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur hic odio voluptatem tenetur consequatur. Vestibulum
+              ante ipsum primis in faucibus orci luctus et ultrices posuere
+              cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+              sodales quis.
+            </p>
+            <a class="btn readmore" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="w3l-features py-5">
+      <div class="container py-lg-5 py-md-4">
+        <div class="grids-area-hny main-cont-wthree-fea row">
+          <div class="col-lg-4 col-sm-6 grids-feature">
+            <div class="area-box">
+              <div class="icon">
+                <i class="fa-solid fa-snowflake"></i>
+              </div>
+              <h4>
+                <a href="#" class="title-head">Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a class="btn readmore" href="#">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 grids-feature mt-sm-0">
+            <div class="area-box mb-lg-0">
+              <div class="icon">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <h4>
+                <a href="#" class="title-head">Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a class="btn readmore" href="#">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0">
+            <div class="area-box mb-lg-0">
+              <div class="icon">
+                <i class="fa-solid fa-hands-clapping"></i>
+              </div>
+              <h4>
+                <a href="#" class="title-head">Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a class="btn readmore" href="#">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 grids-feature">
+            <div class="area-box">
+              <div class="icon">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+              <h4>
+                <a href="#" class="title-head">Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a class="btn readmore" href="#">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 grids-feature mt-sm-0">
+            <div class="area-box mb-lg-0">
+              <div class="icon">
+                <i class="fa-solid fa-shower"></i>
+              </div>
+              <h4>
+                <a href="#" class="title-head">Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a class="btn readmore" href="#">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0">
+            <div class="area-box">
+              <div class="icon">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <h4>
+                <a href="#" class="title-head">Dog Walking</a>
+              </h4>
+              <p>
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo.
+              </p>
+              <a class="btn readmore" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service">
+      <div class="py-5">
+        <div class="container py-md-5 py-3">
+          <div class="row">
+            <div class="service-image col-lg-6 pl-lg-5 mb-lg-0 mb-5">
+              <img class="img-curve img-fluid" src="./image/ab.jpg" alt="ab" />
+            </div>
+            <div class="service-text col-lg-6">
+              <h6 class="sub-title">Why Choose Us</h6>
+              <h3 class="hny-title">What We Offer for You</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet,
+                consectetur adipisicingelit,
+              </p>
+              <ul>
+                <li>
+                  <span><i class="fa fa-check"></i>Certified Groomer</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-check"></i>10 Years of Experience</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-check"></i>Pet Lover</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-check"></i>Customer Supports</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-check"></i>Veterinary Help</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="count" class="py-5">
+      <div class="container py-lg-0 py-3">
+        <div class="count_content pb-lg-3">
+          <div class="count_item">
+            <p class="counter">730</p>
+            <p>Happy Clients</p>
+          </div>
+          <div class="count_item">
+            <p class="counter">80</p>
+            <p>Professionals</p>
+          </div>
+          <div class="count_item">
+            <p class="counter">812</p>
+            <p>Adopted Pets</p>
+          </div>
+          <div class="count_item">
+            <p class="counter">90</p>
+            <p>Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+      function changeTheme() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./libs/countup/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.min.js"></script>
+
+    <script>
+      $(".counter").countUp();
+    </script>
   </body>
 </html>
