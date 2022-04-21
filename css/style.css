@@ -451,7 +451,7 @@ footer {
 
 
 
-/* .sub__content>input#email:focus-visible {
+.sub__content>input#email:focus-visible {
   border: 1px solid var(--primary-color);
   box-shadow: none;
-} */
+}
