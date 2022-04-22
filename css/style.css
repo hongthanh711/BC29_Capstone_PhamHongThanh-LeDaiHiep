@@ -771,6 +771,11 @@ p.counter {
 }
 
 /* Nutrition */
+.nutrition {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .nutrition__content {
   position: relative;
 }
@@ -938,6 +943,8 @@ p.counter {
 .sub .sub__content input:focus {
     border: 1px solid var(--primary-color) !important;
     box-shadow: none;
+  outline: none;
+
 }
 
 /* Footer */
@@ -1025,6 +1032,10 @@ footer {
 }
 
 .icon-back-to-top>a.arrow:hover {
+  color: white !important;
+}
+
+.icon-back-to-top>a.arrow:hover {
   cursor: pointer;
   text-decoration: none;
 }
@@ -1034,7 +1045,4 @@ footer {
   opacity: 1;
 }
 
-.sub__content>input#email:focus-visible {
-  border: 1px solid var(--primary-color);
-  box-shadow: none;
-}
+
