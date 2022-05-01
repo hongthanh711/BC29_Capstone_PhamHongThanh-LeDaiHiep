@@ -168,6 +168,16 @@ a {
   background-color: #222;
 }
 
+.dark-mode .plan {
+  background-color: #222;
+}
+
+.dark-mode .plan__item {
+  background-color: black;
+
+}
+
+/* Common */
 .sub-title {
   font-size: 18px;
   font-weight: 400;
@@ -197,7 +207,7 @@ body img{
   border-radius: 10px;
 }
 
-header{
+/* header{
   background-color: white !important;
   padding: 0px;
   transition: all 0.4s ease 0s;
@@ -205,31 +215,44 @@ header{
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
-}
+} */
 
-header.container{
+/* header.container{
   position: absolute;
   top: 0;
   left: 50%;
   z-index: 100;
   transform: translateX(-50%);
-}
+} */
 
 .fixed-top{
   top: 40px;
 }
 
+header {
+  transition: all 0.6s ease-in-out;
+}
 
 header.nav-fixed {
-  padding: 0px;
+  padding: 10px;
   background-color: var(--bg-color);
-  height: 80px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 
+header.fixed {
+  padding: 0px;
+  /* background-color: var(--bg-color);
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%); */
+}
 
-.navbar .navbar-brand {
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: #116e32;
+}
+
+.navbar-dark a.navbar-brand {
   margin: 0;
   padding: 0;
   font-size: 34px;
@@ -245,6 +268,8 @@ header.nav-fixed {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  min-height: 80px;
+
 }
 
 ul.navbar-nav{
@@ -376,7 +401,7 @@ a.dropdown-item {
 }
 
 .banner-1{
-  background: url(/image/banner1.jpg)  no-repeat center;
+  background: url(./../image/banner1.jpg)  no-repeat center;
   background-size: cover;
   min-height: calc(100vh - 40px);
   position: relative;
@@ -386,7 +411,7 @@ a.dropdown-item {
   
 }
 .banner-2{
-  background: url(/image/banner2.jpg) no-repeat center;
+  background: url(./../image/banner2.jpg) no-repeat center;
   background-size: cover;
   min-height: calc(100vh - 40px);
   position: relative;
@@ -396,7 +421,7 @@ a.dropdown-item {
   
 }
 .banner-3{
-  background: url(/image/banner3.jpg)  no-repeat center;
+  background: url(./../image/banner3.jpg)  no-repeat center;
   background-size: cover;
   min-height: calc(100vh - 40px);
   position: relative;
@@ -406,7 +431,7 @@ a.dropdown-item {
   
 }
 .banner-4{
-  background: url(/image/banner4.jpg)  no-repeat center;
+  background: url(./../image/banner4.jpg)  no-repeat center;
   background-size: cover;
   min-height: calc(100vh - 40px);
   position: relative;
@@ -771,11 +796,6 @@ p.counter {
 }
 
 /* Nutrition */
-.nutrition {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .nutrition__content {
   position: relative;
 }
@@ -1046,3 +1066,16 @@ footer {
 }
 
 
+/* Collapsing */
+
+.navbar-dark .navbar-toggler {
+  background-color: #189A46;
+}
+
+#collapsibleNavbar {
+  justify-content: flex-end;
+}
+
+ul.navbar-nav {
+  padding-left: 0;
+}
