@@ -152,7 +152,7 @@ a {
   color: white;
 }
 
-.dark-mode .area-box .readmore{
+.dark-mode .readmore{
   color: white;
 }
 
@@ -574,7 +574,6 @@ a.dropdown-item {
   margin-top: 20px;
   display: inline-block;
   text-transform: capitalize;
-
 }
 
 #features{
