@@ -1,7 +1,12 @@
 @media screen and (min-width: 1200px){
     .nutrition {
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
+      }
+    
+      .nutrition__title {
+          padding: 20px;
+          padding-bottom: 40px;
       }
 }
 
