@@ -234,7 +234,7 @@ header {
 }
 
 header.nav-fixed {
-  padding: 10px;
+  padding: 10px 0;
   background-color: var(--bg-color);
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
@@ -390,6 +390,20 @@ a.dropdown-item {
 
 .navbar-nav .dropdown-menu {
   transform: translateX(-50px);
+}
+
+/* Collapsing */
+
+.navbar-dark .navbar-toggler {
+  background-color: #189A46;
+}
+
+#collapsibleNavbar {
+  justify-content: flex-end;
+}
+
+ul.navbar-nav {
+  padding-left: 0;
 }
 
 #checkbox{
@@ -1065,16 +1079,3 @@ footer {
 }
 
 
-/* Collapsing */
-
-.navbar-dark .navbar-toggler {
-  background-color: #189A46;
-}
-
-#collapsibleNavbar {
-  justify-content: flex-end;
-}
-
-ul.navbar-nav {
-  padding-left: 0;
-}
